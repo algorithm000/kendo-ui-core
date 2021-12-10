@@ -82,6 +82,7 @@ Below are listed the steps for you to follow when configuring the Kendo UI Grid 
 
         // Configure columns, enable paging, filtering, sorting and grouping
         $grid->addColumn($productNameColumn, $unitPriceColumn, $discontinuedColumn)
+             ->dataSource($dataSource)
              ->filterable(true)
              ->sortable(true)
              ->pageable(true)
