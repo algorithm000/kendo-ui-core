@@ -534,7 +534,7 @@ First, configure a Kendo UI Grid for PHP binding and then implement the remote s
         <?php
         if ($type == 'destroy') {
             // The 'destroy' method of DataSourceResult accepts table name, array of models and the name of the primary key column
-            $data = $result->update('Products', $request->models, 'ProductID');
+            $data = $result->destroy('Products', $request->models, 'ProductID');
         }
         ?>
 
